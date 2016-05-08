@@ -24,6 +24,14 @@ komplex komplex::operator+(const komplex&ringt)
 	return komplex(real + ringt.real, fake + ringt.fake);
 }
 
+bool komplex::operator==(const komplex & ring)
+{
+	if (real == ring.real, fake == ring.fake)
+		return true;
+	else
+	return false;
+}
+
 void komplex::input()
 {
 	cout << "введите действительную часть y=";
