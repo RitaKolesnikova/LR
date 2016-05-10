@@ -24,20 +24,40 @@ komplex komplex::operator+(const komplex&ringt)
 	return komplex(real + ringt.real, fake + ringt.fake);
 }
 
-bool komplex::operator==(const komplex & ring)
+bool komplex::operator>=(const komplex & ring)
 {
-	if (real == ring.real, fake == ring.fake)
+	if (real >= ring.real, fake >= ring.fake)
 		return true;
 	else
 	return false;
+}
+
+bool komplex::operator<=(const komplex & ring)
+{
+	if (real <= ring.real, fake <= ring.fake)
+		return true;
+	else
+		return false;
 }
 
 void komplex::input()
 {
 	cout << "введите действительную часть y=";
 	cin >> real;
+	if (real >= '0' && real <= '9')
+	{
+		cout << "Значение неверно,введите заново." << endl;
+		cout << "введите действительную часть y=";
+		cin >> real;
+	}
 	cout << "введите мнимую часть x*i=";
 	cin >> fake;
+	if (fake >= '0' && fake <= '9')
+	{
+		cout << "Значение неверно,введите заново." << endl;
+		cout << "введите мнимую часть x*i=";
+		cin >> fake;
+	}
 }
 
 void komplex::arg()

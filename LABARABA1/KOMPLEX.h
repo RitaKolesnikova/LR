@@ -21,6 +21,7 @@ public:
 	void arg();
 	void mod();
 	komplex operator+(const komplex&rin);
-	bool operator==(const komplex&ring);
+	bool operator>=(const komplex&ring);
+	bool operator<=(const komplex&ring);
 	void input();
 };
