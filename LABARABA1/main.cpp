@@ -27,19 +27,19 @@ void menu()
 		{
 		case '1':
 			new komplex;
-			&komplex::input;
-			&komplex::mod;
+			komplex::input;
+			komplex::mod;
 			break;
 		case '2':
 			new komplex;
-			&komplex::input;
-			&komplex::arg;
+			komplex::input;
+			komplex::arg;
 			break;
 			case '4':
-				&komplex::showArr;
+				komplex::showArr;
 				break;
 			case '5':
-				&komplex::DelArr;
+				komplex::DelArr;
 				break;
 			default:
 				cout << "Goodbye\n";
